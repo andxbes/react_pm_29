@@ -15,7 +15,7 @@ export default function AccordionItem({ id, className, title, children }) {
     return (
         <li className={className} >
             <h3 onClick={handleClick}>{title}</h3>
-            <div className={`accordion-item-content ${isOpen ? 'open' : undefined}`}>{children}</div>
+            <div className={`accordion-item-content ${isOpen ? 'open' : ''}`}>{children}</div>
         </li>
     );
 };
